@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://quiet-basin-15799.herokuapp.com/' 'https://punart.org']
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'frontpage'
