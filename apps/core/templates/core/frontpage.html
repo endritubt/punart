@@ -1,7 +1,24 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
-    <h2 class="subtitle has-text-centered">Newest jobs</h2>
+<section class="section pt-0 pb-20 has-background-light is-clipped has-text-centered">
+  <img class="image is-inline-block"
+       src="https://ucarecdn.com/bf60dd64-f9c2-423d-bab6-4a7f70ebd6d9/cherryworkflow.svg"
+       style="height:448px;" alt="">
+  <div class="container">
+    <span class="has-text-dark has-text-weight-bold">Search for New Adventures. Find new job openings. Search employees</span>
+    <h1 class="title has-text- mt-2 mb-16">We offer consultancy in the field of recruitment and qualifications of the workforce in Kosovo and Albania</h1>
+    <div class="has-mw-3xl mx-auto">
+      <h4 class="is-size-4 has-text-black mb-12 has-text-weight-normal"></h4>
+    </div>
+  </div>
+</section>
+
+<hr />
+<hr />
+
+
+<h2 class="subtitle has-text-centered">Newest jobs</h2>
 
     <div class="columns">
         {% for job in jobs %}

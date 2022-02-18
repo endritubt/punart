@@ -9,6 +9,19 @@ def frontpage(request):
     jobs = Job.objects.filter(status=Job.ACTIVE).order_by('-created_at')[0:3]
 
     return render(request, 'core/frontpage.html', {'jobs': jobs})
+def services(request):
+
+    return render(request, 'core/services.html', {'services': services})
+
+def about(request):
+
+    return render(request, 'core/about.html', {'about': about})
+
+def contact(request):
+
+    return render(request, 'core/contact.html', {'contact': contact})
+
+
 
 def signup(request):
     if request.method == 'POST':
